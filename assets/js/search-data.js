@@ -449,11 +449,6 @@ ninja.data = [{
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{id: "projects-ihabotv2-intelligent-hospital-assistance-robot",
           title: 'IHABOTv2 — Intelligent Hospital Assistance Robot',
           description: "Navigation stack + embedded health sensor integration for real-world hospital robotics.",
