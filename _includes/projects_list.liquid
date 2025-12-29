@@ -78,17 +78,30 @@
 
         <!-- Buttons (clean academic) -->
         {% if project.report or project.video or project.github %}
-          <div class="project-links">
-            {% if project.report %}
-              <a class="project-btn" href="{{ project.report }}" target="_blank" rel="noopener">Report</a>
-            {% endif %}
-            {% if project.video %}
-              <a class="project-btn" href="{{ project.video }}" target="_blank" rel="noopener">Video</a>
-            {% endif %}
-            {% if project.github %}
-              <a class="project-btn" href="{{ project.github }}" target="_blank" rel="noopener">GitHub</a>
-            {% endif %}
-          </div>
+           <div class="project-links mt-2">
+  {% if project.report %}
+    <a class="btn btn-sm btn-outline-primary me-2"
+       href="{{ project.report }}" target="_blank" rel="noopener">
+      Report
+    </a>
+  {% endif %}
+
+  {% if project.video %}
+    <a class="btn btn-sm btn-outline-primary me-2"
+       href="{{ project.video }}" target="_blank" rel="noopener">
+      Video
+    </a>
+  {% endif %}
+
+  {% if project.github %}
+    <a class="btn btn-sm btn-outline-primary"
+       href="{{ project.github }}" target="_blank" rel="noopener">
+      GitHub
+    </a>
+  {% endif %}
+</div>
+
+
         {% endif %}
 
         <!-- Read more -->
