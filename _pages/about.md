@@ -36,7 +36,7 @@ My research interests span **robot kinematics and task-space control**, **reinfo
 
 From a research philosophy perspective, I strongly believe in **quality over quantity**. Rather than pursuing a large number of loosely connected projects, I prefer to focus on a **small set of well-defined problems**, following a disciplined timetable and a structured research process. My aim is to construct work that is **technically rigorous**, **reproducible**, and capable of making a **lasting impact**, rather than producing rapid but shallow outputs.
 
-Outside of research, I enjoy **indoor games such as chess and table tennis**, which align with my interest in **strategy, focus, and disciplined thinking**. I am also keen on **traveling**, as it offers opportunities to experience diverse environments and ideas beyond the laboratory. In my free time, I enjoy playing the **ukulele** as a way to maintain **creativity, balance, and mindfulness** alongside academic work.
+Outside of research, I enjoy indoor games such as chess and table tennis. I am also keen on **traveling**, as it offers opportunities to experience diverse environments and ideas beyond the laboratory. In my free time, I enjoy playing the **ukulele** as a way to maintain **creativity, balance, and mindfulness** alongside academic work.
 
 
 <!---
