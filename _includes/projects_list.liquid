@@ -3,18 +3,31 @@
 <div class="publications">
   {% for project in projects %}
     <div class="row mb-4">
-      <div class="col-sm-12">
 
-        <!-- Title -->
+      <!-- Left preview column -->
+      <div class="col col-sm-2 abbr">
+        {% if project.preview %}
+          {% assign p = project.preview | prepend: '/assets/img/project_preview/' %}
+          {% include figure.liquid
+            path=p
+            sizes="200px"
+            class="preview z-depth-1 rounded"
+            zoomable=true
+            avoid_scaling=true
+            alt=project.title
+          %}
+        {% endif %}
+      </div>
+
+      <!-- Right content column -->
+      <div class="col-sm-10">
+
+        <!-- Title (click to full project page) -->
         <div class="title">
-          {% if project.external_url %}
-            <a href="{{ project.external_url }}">{{ project.title }}</a>
-          {% else %}
-            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-          {% endif %}
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </div>
 
-        <!-- Meta line -->
+        <!-- Meta -->
         <div class="periodical">
           {% if project.role %}<em>{{ project.role }}</em>{% endif %}
           {% if project.organization %}
@@ -27,7 +40,7 @@
           {% endif %}
         </div>
 
-        <!-- Short description -->
+        <!-- Description -->
         {% if project.description %}
           <div class="periodical">
             {{ project.description }}
@@ -36,21 +49,13 @@
 
         <!-- Links -->
         <div class="links mt-2">
-          {% if project.website %}
-            <a href="{{ project.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
-          {% endif %}
-          {% if project.github %}
-            <a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button">GitHub</a>
-          {% endif %}
-          {% if project.report %}
-            <a href="{{ project.report }}" class="btn btn-sm z-depth-0" role="button">Report</a>
-          {% endif %}
-          {% if project.video %}
-            <a href="{{ project.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
-          {% endif %}
+          {% if project.website %}<a href="{{ project.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>{% endif %}
+          {% if project.github %}<a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button">GitHub</a>{% endif %}
+          {% if project.report %}<a href="{{ project.report }}" class="btn btn-sm z-depth-0" role="button">Report</a>{% endif %}
+          {% if project.video %}<a href="{{ project.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>{% endif %}
         </div>
 
-        <!-- Bullet highlights -->
+        <!-- Highlights -->
         {% if project.highlights %}
           <ul class="mt-2">
             {% for item in project.highlights %}
@@ -58,6 +63,11 @@
             {% endfor %}
           </ul>
         {% endif %}
+
+        <!-- Optional: "Read more" -->
+        <div class="mt-2">
+          <a href="{{ project.url | relative_url }}">Read more →</a>
+        </div>
 
       </div>
     </div>
