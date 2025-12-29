@@ -125,7 +125,7 @@
       year: 2020
       description:
         - "Built a four-wheeled autonomous robot using ROS packages (gmapping, amcl) and RRT motion planning"
-        - "GitHub: (add link)"
+        - "GitHub: [Link](https://github.com/UK-Roy/Autonomous-Navigation-Robot)"
     - title: Fire Rescue Robot
       institution: ICT Division, Government of Bangladesh
       year: 2018 – 2019
@@ -136,7 +136,7 @@
       year: 2018
       description:
         - "Designed a robotic hand in SolidWorks and programmed control to play music"
-        - "Video: (add link)"
+        - "Video: [Demo Video](https://youtu.be/oc1MBdTlt_k?si=dB8Dn3I_3ypu5I7M)"
 
 - title: Honors and Awards
   type: time_table
