@@ -1,3 +1,9 @@
+{% comment %}
+  Project list cards (academic style)
+  - Uses project front-matter: title, description, year, role, organization/grant, preview, report, video, github
+  - Keeps "Read more" linking to the project page (detail page unchanged)
+{% endcomment %}
+
 {% assign projects = site.projects | sort: "year" | reverse %}
 
 <div class="project-cards">
@@ -11,12 +17,14 @@
             {% include figure.liquid
               path=p
               sizes="220px"
-              class="img-fluid rounded z-depth-1"
-              zoomable=true
+              class="img-fluid rounded z-depth-1 project-preview-img"
+              zoomable=false
               avoid_scaling=true
               alt=project.title
             %}
           </div>
+        {% else %}
+          <div class="project-preview project-preview--empty"></div>
         {% endif %}
       </div>
 
@@ -27,16 +35,37 @@
           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </div>
 
-        <!-- Meta line (role, grant, year) -->
+        <!-- Meta line (role || organization/grant || year) -->
         <div class="project-meta">
-          {% if project.role %}<em>{{ project.role }}</em>{% endif %}
-          {% if project.grant %}
-            {% if project.role %} · {% endif %}
-            <span class="project-grant">{{ project.grant }}</span>
+          {% assign meta_parts = "" | split: "|" %}
+
+          {% if project.role %}
+            {% assign meta_parts = meta_parts | push: project.role %}
           {% endif %}
+
+          {% if project.organization %}
+            {% assign meta_parts = meta_parts | push: project.organization %}
+          {% elsif project.grant %}
+            {% assign meta_parts = meta_parts | push: project.grant %}
+          {% endif %}
+
           {% if project.year %}
-            {% if project.role or project.grant %} · {% endif %}
-            <span class="project-year">{{ project.year }}</span>
+            {% assign meta_parts = meta_parts | push: project.year %}
+          {% endif %}
+
+          {% if meta_parts.size > 0 %}
+            {% for part in meta_parts %}
+              <span class="project-meta-item">
+                {% if forloop.first %}
+                  <em>{{ part }}</em>
+                {% else %}
+                  {{ part }}
+                {% endif %}
+              </span>
+              {% unless forloop.last %}
+                <span class="project-meta-sep">||</span>
+              {% endunless %}
+            {% endfor %}
           {% endif %}
         </div>
 
@@ -47,18 +76,20 @@
           </div>
         {% endif %}
 
-        <!-- Buttons -->
-        <div class="project-links">
-          {% if project.report %}
-            <a class="btn btn-sm btn-outline-primary" href="{{ project.report }}" target="_blank" rel="noopener">Report</a>
-          {% endif %}
-          {% if project.video %}
-            <a class="btn btn-sm btn-outline-primary" href="{{ project.video }}" target="_blank" rel="noopener">Video</a>
-          {% endif %}
-          {% if project.github %}
-            <a class="btn btn-sm btn-outline-primary" href="{{ project.github }}" target="_blank" rel="noopener">GitHub</a>
-          {% endif %}
-        </div>
+        <!-- Buttons (clean academic) -->
+        {% if project.report or project.video or project.github %}
+          <div class="project-links">
+            {% if project.report %}
+              <a class="project-btn" href="{{ project.report }}" target="_blank" rel="noopener">Report</a>
+            {% endif %}
+            {% if project.video %}
+              <a class="project-btn" href="{{ project.video }}" target="_blank" rel="noopener">Video</a>
+            {% endif %}
+            {% if project.github %}
+              <a class="project-btn" href="{{ project.github }}" target="_blank" rel="noopener">GitHub</a>
+            {% endif %}
+          </div>
+        {% endif %}
 
         <!-- Read more -->
         <div class="project-more">
