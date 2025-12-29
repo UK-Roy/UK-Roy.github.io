@@ -15,3 +15,6 @@ _data/citations.yml
 _pages/about.md
 _pages/cv.md
 _pages/teaching.md
+_includes/projects_list.liquid
+_pages/projects.md
+_projects/ihabotv2.md
