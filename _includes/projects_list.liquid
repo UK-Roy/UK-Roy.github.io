@@ -1,0 +1,65 @@
+{% assign projects = site.projects | sort: "year" | reverse %}
+
+<div class="publications">
+  {% for project in projects %}
+    <div class="row mb-4">
+      <div class="col-sm-12">
+
+        <!-- Title -->
+        <div class="title">
+          {% if project.external_url %}
+            <a href="{{ project.external_url }}">{{ project.title }}</a>
+          {% else %}
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+          {% endif %}
+        </div>
+
+        <!-- Meta line -->
+        <div class="periodical">
+          {% if project.role %}<em>{{ project.role }}</em>{% endif %}
+          {% if project.organization %}
+            {% if project.role %} — {% endif %}
+            {{ project.organization }}
+          {% endif %}
+          {% if project.year %}
+            {% if project.role or project.organization %} · {% endif %}
+            {{ project.year }}
+          {% endif %}
+        </div>
+
+        <!-- Short description -->
+        {% if project.description %}
+          <div class="periodical">
+            {{ project.description }}
+          </div>
+        {% endif %}
+
+        <!-- Links -->
+        <div class="links mt-2">
+          {% if project.website %}
+            <a href="{{ project.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+          {% endif %}
+          {% if project.github %}
+            <a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button">GitHub</a>
+          {% endif %}
+          {% if project.report %}
+            <a href="{{ project.report }}" class="btn btn-sm z-depth-0" role="button">Report</a>
+          {% endif %}
+          {% if project.video %}
+            <a href="{{ project.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+          {% endif %}
+        </div>
+
+        <!-- Bullet highlights -->
+        {% if project.highlights %}
+          <ul class="mt-2">
+            {% for item in project.highlights %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+      </div>
+    </div>
+  {% endfor %}
+</div>
