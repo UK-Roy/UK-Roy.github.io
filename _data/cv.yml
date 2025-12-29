@@ -2,96 +2,200 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Utsha Kumar Roy
+    - name: Location
+      value: Dhaka, Bangladesh
+    - name: Email
+      value: utsharoy99@gmail.com
+    - name: GitHub
+      value: github.com/UK-Roy
+    - name: Phone
+      value: "+8801521255553"
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.Sc. in Robotics & Mechatronics Engineering (Final Result Awaiting)
+      institution: University of Dhaka, Bangladesh
+      year: 2023 – 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "CGPA: 3.98/4.00 (Ranked 1st)"
+        - "Thesis: Human-Aware Robot Navigation in Dynamic Crowds Using Reinforcement Learning and Attention-Based Interaction Models"
+        - "Supervisor: Dr. Sejuti Rahman"
+    - title: B.Sc. in Robotics & Mechatronics Engineering
+      institution: University of Dhaka, Bangladesh
+      year: 2018 – 2023
       description:
-        - Description 1.
-        - Description 2.
+        - "CGPA: 3.71/4.00 (Ranked 1st)"
+        - "Thesis: 3D Mapping Using Graph Convolutional Neural Network for Autonomous Navigation"
+        - "Supervisor: Dr. Sejuti Rahman"
+    - title: Higher Secondary School Certificate (HSC), Science
+      institution: Notre Dame College, Dhaka Board, Bangladesh
+      year: 2015 – 2017
+      description:
+        - "GPA: 5.00/5.00"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Lecturer
+      institution: BRAC University, Dhaka, Bangladesh
+      year: June 2025 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Taught CSE461: Introduction to Robotics (robot kinematics, motion planning, mobile navigation fundamentals)"
+        - "Led weekly robotics labs and designed hands-on exercises to bridge theory with practice"
+        - "Faculty mentor, BRAC University Robotics Club; organized workshops, project clinics, and competition preparation"
+        - "Supervised student projects, tutorials, and office-hour coaching; guided teams on problem-driven implementations"
+
+    - title: Robotics Developer
+      institution: Anwar Group of Industries (AGI), Dhaka, Bangladesh
+      year: March 2024 – October 2024
       description:
-        - Description 1.
-        - Description 2.
+        - "Developed a ROS 2 simulation project for a UR robot; implemented forward-kinematics-based control for robot arm tasks"
+        - "Designed a carton handling simulation: 2D-to-3D conversion, bottom-fin closing, and conveyor placement workflow"
+        - "Developed a Unity 3D simulation with AI-controlled cars using NavMesh navigation"
+        - "Created a virtual laboratory environment with a three-way intersection and signal control"
+        - "Generated synthetic image datasets with built-in detection/classification annotations for ML training and evaluation"
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Research Assistant (IHABOTv2) — Centennial Research Grant
+      institution: University of Dhaka, Bangladesh
+      year: 2024 – Ongoing
       description:
+        - "Currently leading the navigation stack development for the project"
+        - "Designed and implemented robot navigation algorithms for autonomous movement"
+        - "Working on embedded systems: integrating health-measuring sensors for real-time patient data acquisition"
+        - "Applying ML models to sensor data to assist in diagnosing patient health conditions"
+        - "Advisor: Dr. Sejuti Rahman"
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Research Assistant (UAV-Cop) — Centennial Research Grant
+      institution: University of Dhaka, Bangladesh
+      year: 2022 – 2023
+      description:
+        - "Developed a system to collect data from drones and manage the implementation of machine learning algorithms"
+        - "Advisor: Dr. Sejuti Rahman"
 
-- title: Open Source Projects
+    - title: Research Assistant (IHABOT: Intelligent Hospital Assistance Robot) — Centennial Research Grant
+      institution: University of Dhaka, Bangladesh
+      year: 2021 – 2022
+      description:
+        - "Led autonomous navigation and vision-based ML development to reduce doctor–patient interactions during pandemics"
+        - "Advisor: Dr. Sejuti Rahman"
+
+    - title: Research Assistant (AUV Docking System) — University Grants Commission of Bangladesh
+      institution: University of Dhaka, Bangladesh
+      year: 2019 – 2022
+      description:
+        - "Developed an autonomous underwater vehicle (AUV) docking system using multiple sensors and vision"
+        - "Advisor: Dr. Shugata Ahmed"
+
+- title: Workshops & Service
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: NAO Robot Workshop (Instructor)
+      institution: Department of Robotics & Mechatronics Engineering, University of Dhaka
+      year: 2022
+      description:
+        - "Trained students on programming and operating the NAO robot (one-day workshop)"
+    - title: ROS 2 Workshop (Instructor)
+      institution: Department of Robotics & Mechatronics Engineering, University of Dhaka
+      year: 2023
+      description:
+        - "Taught ROS 2 architecture, simulation, visualization, and physical robot programming"
+    - title: Mentor
+      institution: Bangladesh Robot Olympiad (BdRO), Bangladesh
+      year: 2018 – 2023
+      description:
+        - "Mentored one team each year; teams achieved silver and bronze awards at the International Robotics Olympiad (IRO)"
+    - title: Judge (Line Following Robot Segment)
+      institution: 13th National Science Carnival, Dhaka Residential Model College (DRMC)
+      year: 2023
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Camera Calibration using ArUco
+      institution: M.Sc. Course Project (Computer Vision)
+      year: 2024
+      description:
+        - "Developed a Python package for RGB camera calibration for robotics vision and mobile cameras using ArUco markers"
+        - "GitHub: (add link)"
+    - title: Reward Function Generation by Large Language Models (LLMs)
+      institution: Self Learning Project, Dhaka, Bangladesh
+      year: 2024
+      description:
+        - "Trained a Panda robot in Panda-Gym using reinforcement learning with reward functions generated by open-source LLMs (e.g., LLaMA2) and ChatGPT"
+        - "GitHub: (add link)"
+    - title: Autonomous Navigation Robot
+      institution: Personal Project, Dhaka, Bangladesh
+      year: 2020
+      description:
+        - "Built a four-wheeled autonomous robot using ROS packages (gmapping, amcl) and RRT motion planning"
+        - "GitHub: (add link)"
+    - title: Fire Rescue Robot
+      institution: ICT Division, Government of Bangladesh
+      year: 2018 – 2019
+      description:
+        - "Designed a stair-climbing mobile robot; assembled hardware and implemented control algorithms for emergency response scenarios"
+    - title: Piano Playing Robot
+      institution: B.Sc. Course Project (Fundamental of Mechatronics Engineering Lab)
+      year: 2018
+      description:
+        - "Designed a robotic hand in SolidWorks and programmed control to play music"
+        - "Video: (add link)"
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - "Runners up for IHABOTv2 — ROBOTRONICS FEST 2025 (Project Showcase)"
+        - "Jagannath Hall Merit Award — University of Dhaka (Academic Achievements)"
+    - year: 2023
       items:
-        - Max Planck Medal
+        - "National Science & Technology Fellowship — Ministry of Science & Technology, Bangladesh (M.Sc. thesis)"
+    - year: 2022
+      items:
+        - "Runners up — Robotics in Bangladesh: Academia & Industry Initiative (Best poster presentation)"
+        - "Runners up — Dhaka University Science Fair (Best research project for IHABOT)"
+        - "Research Scholarship — IFIC Bank Trust Fund (Undergraduate thesis research)"
+    - year: 2020
+      items:
+        - "Mitsubishi UFJ Foundation Scholarships — University of Dhaka (Academic excellence)"
+        - "Runners up — Robotics & AI Category, DUCSU Science and Technology Olympiad 2020"
+    - year: 2018 – 2019
+      items:
+        - "Luna Shamsuddin Chairman Scholarship — Janata Bank Limited, Bangladesh (Ranked first in semester finals)"
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Publications
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "Roy, U. K., & Rahman, S. (2025). TAGA: A Tangent-Based Framework for Socially Compliant Robot Navigation Around Human Groups. arXiv:2503.21168. (Preprint)"
+    - "A Novel Docking System For Autonomous Underwater Vehicle. International Conference on Mechanical, Industrial and Materials Engineering (ICMIME-2022)."
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Robot Frameworks
+      items:
+        - "ROS, ROS2, Nav2, OpenAI Gym, Isaac Gym, MoveIt"
+    - title: Tools
+      items:
+        - "OpenCV, PCL, Keras, PyTorch, TensorFlow, LaTeX, Docker, Weights & Biases"
+    - title: Programming Languages
+      items:
+        - "Python, MATLAB, C++, C, Java"
+    - title: Simulators
+      items:
+        - "Unity, Gazebo, V-REP"
+
+- title: Languages
+  type: list
+  contents:
+    - "Bangla — Mother Tongue"
+    - "English — IELTS Overall Band: 7.0 (L: 7.0, R: 7.5, W: 6.0, S: 7.0)"
+
+- title: References
+  type: list
+  contents:
+    - "Dr. Sejuti Rahman — Associate Professor & Chairperson, Department of Robotics and Mechatronics Engineering, University of Dhaka (Email: sejuti@gmail.com | Phone: +8801836800864)"
+    - "Dr. Shamim Ahmed Deowan — Professor, Department of Robotics and Mechatronics Engineering, University of Dhaka (Email: shamimdeowan.rme@du.ac.bd | Phone: +8801703694615)"
