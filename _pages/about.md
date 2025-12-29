@@ -38,7 +38,7 @@ From a research philosophy perspective, I strongly believe in **quality over qua
 
 Outside of research, I enjoy indoor games such as chess and table tennis. I am also keen on **traveling**, as it offers opportunities to experience diverse environments and ideas beyond the laboratory. In my free time, I enjoy playing the **ukulele** as a way to maintain **creativity, balance, and mindfulness** alongside academic work.
 
-
+A **comprehensive version** of my curriculum vitae is accessible through the CV link in the footer.
 <!---
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
