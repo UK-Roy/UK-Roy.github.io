@@ -454,6 +454,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-ihabotv2-intelligent-hospital-assistance-robot",
+          title: 'IHABOTv2 — Intelligent Hospital Assistance Robot',
+          description: "Navigation stack + embedded health sensor integration for real-world hospital robotics.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ihabotv2/";
             },},{
         id: 'social-cv',
         title: 'CV',
