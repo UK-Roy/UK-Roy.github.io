@@ -35,7 +35,7 @@ My research interests span robot kinematics and task-space control, reinforcemen
 
 From a research philosophy perspective, I strongly believe in quality over quantity. Rather than pursuing a large number of loosely connected projects, I prefer to focus on a small set of well-defined problems, following a disciplined timetable and a structured research process. My aim is to construct work that is technically rigorous, reproducible, and capable of making a lasting impact, rather than producing rapid but shallow outputs.
 
-Outside of research, I enjoy indoor games such as chess and table tennis, both of which reflect my appreciation for strategy, focus, and patience. In my free time, I also enjoy playing the ukulele, which helps me maintain balance, creativity, and mindfulness alongside academic work.
+Outside of research, I enjoy indoor games such as chess and table tennis, which align with my interest in strategy, focus, and disciplined thinking. I am also keen on traveling, as it offers opportunities to experience diverse environments and ideas beyond the laboratory. In my free time, I enjoy playing the ukulele as a way to maintain creativity, balance, and mindfulness alongside academic work.
 
 <!---
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
