@@ -1,74 +1,69 @@
 {% assign projects = site.projects | sort: "year" | reverse %}
 
-<div class="publications">
+<div class="project-cards">
   {% for project in projects %}
-    <div class="row mb-4">
-
-      <!-- Left preview column -->
-      <div class="col col-sm-2 abbr">
+    <div class="row project-card g-3">
+      <!-- Left: preview image (optional) -->
+      <div class="col-12 col-sm-3 col-md-2">
         {% if project.preview %}
           {% assign p = project.preview | prepend: '/assets/img/project_preview/' %}
-          {% include figure.liquid
-            path=p
-            sizes="200px"
-            class="preview z-depth-1 rounded"
-            zoomable=true
-            avoid_scaling=true
-            alt=project.title
-          %}
+          <div class="project-preview">
+            {% include figure.liquid
+              path=p
+              sizes="220px"
+              class="img-fluid rounded z-depth-1"
+              zoomable=true
+              avoid_scaling=true
+              alt=project.title
+            %}
+          </div>
         {% endif %}
       </div>
 
-      <!-- Right content column -->
-      <div class="col-sm-10">
-
-        <!-- Title (click to full project page) -->
-        <div class="title">
+      <!-- Right: content -->
+      <div class="col-12 col-sm-9 col-md-10">
+        <!-- Title -->
+        <div class="project-title">
           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </div>
 
-        <!-- Meta -->
-        <div class="periodical">
+        <!-- Meta line (role, grant, year) -->
+        <div class="project-meta">
           {% if project.role %}<em>{{ project.role }}</em>{% endif %}
-          {% if project.organization %}
-            {% if project.role %} — {% endif %}
-            {{ project.organization }}
+          {% if project.grant %}
+            {% if project.role %} · {% endif %}
+            <span class="project-grant">{{ project.grant }}</span>
           {% endif %}
           {% if project.year %}
-            {% if project.role or project.organization %} · {% endif %}
-            {{ project.year }}
+            {% if project.role or project.grant %} · {% endif %}
+            <span class="project-year">{{ project.year }}</span>
           {% endif %}
         </div>
 
-        <!-- Description -->
+        <!-- One-line description -->
         {% if project.description %}
-          <div class="periodical">
+          <div class="project-desc">
             {{ project.description }}
           </div>
         {% endif %}
 
-        <!-- Links -->
-        <div class="links mt-2">
-          {% if project.website %}<a href="{{ project.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>{% endif %}
-          {% if project.github %}<a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button">GitHub</a>{% endif %}
-          {% if project.report %}<a href="{{ project.report }}" class="btn btn-sm z-depth-0" role="button">Report</a>{% endif %}
-          {% if project.video %}<a href="{{ project.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>{% endif %}
+        <!-- Buttons -->
+        <div class="project-links">
+          {% if project.report %}
+            <a class="btn btn-sm btn-outline-primary" href="{{ project.report }}" target="_blank" rel="noopener">Report</a>
+          {% endif %}
+          {% if project.video %}
+            <a class="btn btn-sm btn-outline-primary" href="{{ project.video }}" target="_blank" rel="noopener">Video</a>
+          {% endif %}
+          {% if project.github %}
+            <a class="btn btn-sm btn-outline-primary" href="{{ project.github }}" target="_blank" rel="noopener">GitHub</a>
+          {% endif %}
         </div>
 
-        <!-- Highlights -->
-        {% if project.highlights %}
-          <ul class="mt-2">
-            {% for item in project.highlights %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-
-        <!-- Optional: "Read more" -->
-        <div class="mt-2">
+        <!-- Read more -->
+        <div class="project-more">
           <a href="{{ project.url | relative_url }}">Read more →</a>
         </div>
-
       </div>
     </div>
   {% endfor %}
