@@ -29,11 +29,6 @@
         - "CGPA: 3.71/4.00 (Ranked 1st)"
         - "Thesis: 3D Mapping Using Graph Convolutional Neural Network for Autonomous Navigation"
         - "Supervisor: Dr. Sejuti Rahman"
-    - title: Higher Secondary School Certificate (HSC), Science
-      institution: Notre Dame College, Dhaka Board, Bangladesh
-      year: 2015 – 2017
-      description:
-        - "GPA: 5.00/5.00"
 
 - title: Experience
   type: time_table
@@ -74,7 +69,7 @@
         - "Developed a system to collect data from drones and manage the implementation of machine learning algorithms"
         - "Advisor: Dr. Sejuti Rahman"
 
-    - title: Research Assistant (IHABOT: Intelligent Hospital Assistance Robot) — Centennial Research Grant
+    - title: "Research Assistant (IHABOT: Intelligent Hospital Assistance Robot) — Centennial Research Grant"
       institution: University of Dhaka, Bangladesh
       year: 2021 – 2022
       description:
