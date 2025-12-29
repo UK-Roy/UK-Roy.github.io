@@ -14,7 +14,7 @@ Dhaka, Bangladesh
 - **CSE461: Introduction to Robotics**  
   Covered fundamental concepts including robot kinematics (forward and inverse), motion planning, and mobile robot navigation.
 
-- **CSE461: Robotics Laboratory**  
+- **CSE461L: Robotics Laboratory**  
   Designed and conducted weekly hands-on laboratory sessions focusing on practical robotics workflows, tools, and system integration to bridge theory with real-world applications.
 
 - **Student Supervision and Mentorship**  
