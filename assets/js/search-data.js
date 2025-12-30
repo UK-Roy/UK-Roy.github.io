@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-achievements-amp-honours",
+          title: "Achievements &amp; Honours",
+          description: "Academic awards, research recognitions, and competitive achievements.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/achievements/";
+          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
