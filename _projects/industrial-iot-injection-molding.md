@@ -3,6 +3,8 @@ layout: page
 title: Industrial IoT–Based Production Monitoring System for Injection Molding Machines
 description: Low-cost real-time production and machine monitoring system for legacy injection molding machines.
 year: 2023
+category: research 	
+order: 3
 role: Lead System Designer & Developer
 organization: Anwar Group of Industries(R&D – Manufacturing)
 preview: iot_preview.png
