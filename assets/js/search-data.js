@@ -30,8 +30,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-achievements-amp-honours",
-          title: "Achievements &amp; Honours",
+        },{id: "nav-achievements",
+          title: "Achievements",
           description: "Academic awards, research recognitions, and competitive achievements.",
           section: "Navigation",
           handler: () => {
