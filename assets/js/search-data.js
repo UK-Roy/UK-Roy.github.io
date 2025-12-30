@@ -414,6 +414,11 @@ ninja.data = [{
           description: "Python package for RGB camera calibration using ArUco markers for robotic vision.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/aruco-calibration/";
+            },},{id: "projects-autonomous-navigation-robot",
+          title: 'Autonomous Navigation Robot',
+          description: "ROS-based four-wheeled robot with mapping, localization, and motion planning.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/autonomous-navigation/";
             },},{id: "projects-autonomous-underwater-docking-system-auv-docking",
           title: 'Autonomous Underwater Docking System (AUV Docking)',
           description: "Vision- and sensor-based docking system for autonomous underwater vehicles.",
