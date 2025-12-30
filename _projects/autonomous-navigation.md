@@ -3,7 +3,7 @@ layout: page
 title: Autonomous Navigation Robot
 description: ROS-based four-wheeled robot with mapping, localization, and motion planning.
 category: hobby
-order: 8
+order: 9
 year: 2020
 role: Personal Project
 github: https://github.com/UK-Roy/Autonomous-Navigation-Robot
