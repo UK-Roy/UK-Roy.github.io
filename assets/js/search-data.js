@@ -409,7 +409,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-ihabotv2-intelligent-hospital-assistance-robot",
+          section: "News",},{id: "projects-human-aware-robot-navigation-in-dynamic-crowds-using-reinforcement-learning",
+          title: 'Human-Aware Robot Navigation in Dynamic Crowds using Reinforcement Learning',
+          description: "Socially compliant robot navigation in dense human crowds using reinforcement learning and interaction-aware rewards.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/human-aware-navigation/";
+            },},{id: "projects-ihabotv2-intelligent-hospital-assistance-robot",
           title: 'IHABOTv2 — Intelligent Hospital Assistance Robot',
           description: "Navigation stack + embedded health sensor integration for real-world hospital robotics.",
           section: "Projects",handler: () => {
