@@ -439,6 +439,11 @@ ninja.data = [{
           description: "Navigation stack + embedded health sensor integration for real-world hospital robotics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ihabotv2/";
+            },},{id: "projects-industrial-iot-based-production-monitoring-system-for-injection-molding-machines",
+          title: 'Industrial IoT–Based Production Monitoring System for Injection Molding Machines',
+          description: "Low-cost real-time production and machine monitoring system for legacy injection molding machines.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/industrial-iot-injection-molding/";
             },},{id: "projects-reward-function-generation-using-large-language-models",
           title: 'Reward Function Generation using Large Language Models',
           description: "Reinforcement learning system where reward functions are generated using large language models.",
