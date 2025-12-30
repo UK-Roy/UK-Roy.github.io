@@ -82,6 +82,18 @@
   margin-bottom: 0.4rem;
 }
 
+/* Extra spacing between projects for readability */
+.project-card {
+  margin-bottom: 2.2rem;   /* main vertical gap */
+  padding-bottom: 0.5rem;  /* subtle breathing space */
+}
+
+/* Slight separation line (very light, academic look) */
+.project-card:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
 .project-section-divider {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 1.2rem;
@@ -98,4 +110,5 @@
 .project-card:last-child {
   border-bottom: none;
 }
+
 
