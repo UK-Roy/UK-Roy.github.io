@@ -409,7 +409,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-autonomous-underwater-docking-system-auv-docking",
+          section: "News",},{id: "projects-camera-calibration-using-aruco",
+          title: 'Camera Calibration using ArUco',
+          description: "Python package for RGB camera calibration using ArUco markers for robotic vision.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/aruco-calibration/";
+            },},{id: "projects-autonomous-underwater-docking-system-auv-docking",
           title: 'Autonomous Underwater Docking System (AUV Docking)',
           description: "Vision- and sensor-based docking system for autonomous underwater vehicles.",
           section: "Projects",handler: () => {
