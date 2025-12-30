@@ -3,7 +3,7 @@ layout: page
 title: Piano Playing Robot
 description: Robotic hand capable of playing piano keys.
 category: hobby
-order: 9
+order: 11
 year: 2018
 role: B.Sc. Course Project
 organization: Fundamental of Mechatronics Engineering Lab
