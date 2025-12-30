@@ -3,7 +3,7 @@ layout: page
 title: Camera Calibration using ArUco
 description: Python package for RGB camera calibration using ArUco markers for robotic vision.
 category: hobby
-order: 9
+order: 10
 year: 2024
 role: M.Sc. Course Project
 organization: Computer Vision
