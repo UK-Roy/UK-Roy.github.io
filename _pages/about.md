@@ -9,10 +9,11 @@ profile:
   image: picture.JPG
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>4P199, 4th Floor,</p>
-    <p>BRAC University, Kha 224 Pragati Sarani, Merul Badda,</p>
-    <p>Dhaka-1212, Bangladesh</p>
-
+  **Lecturer, Department of Computer Science and Engineering**  
+  **BRAC University**, Dhaka, Bangladesh  
+    [BRAC University Faculty Page](https://cse.sds.bracu.ac.bd/faculty_profile/441/utsha_kumar_roy)
+    [utsha.kumar@bracu.ac.bd](mailto:utsha.kumar@bracu.ac.bd)
+  
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
