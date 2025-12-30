@@ -3,7 +3,7 @@ layout: page
 title: IHABOTv2 — Intelligent Hospital Assistance Robot
 description: Navigation stack + embedded health sensor integration for real-world hospital robotics.
 category: research
-order: 2
+order: 1
 year: 2024
 status: ongoing
 role: Research Assistant
