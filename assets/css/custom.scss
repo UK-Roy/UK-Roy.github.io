@@ -75,3 +75,27 @@
   text-decoration: none;
 }
 
+.project-section-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-section-divider {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 1.2rem;
+}
+
+/* Add vertical spacing between consecutive project cards */
+.project-card {
+  padding-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #eeeeee; /* optional, very light separator */
+}
+
+/* Remove border for the last project in a section */
+.project-card:last-child {
+  border-bottom: none;
+}
+
