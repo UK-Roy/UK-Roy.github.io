@@ -18,4 +18,12 @@ _pages/teaching.md
 _includes/projects_list.liquid
 _pages/projects.md
 _projects/ihabotv2.md
+_projects/aruco-calibration.md
+_projects/autonomous-navigation.md
+_projects/auv-docking.md
+_projects/fire-rescue.md
+_projects/human-aware-navigation.md
+_projects/llm-reward-rl.md
+_projects/piano-robot.md
+_projects/uav-cop.md
 assets/css/custom.scss
