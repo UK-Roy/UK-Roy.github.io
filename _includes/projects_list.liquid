@@ -1,121 +1,166 @@
-{% comment %}
-  Project list cards (academic style)
-  - Uses project front-matter: title, description, year, role, organization/grant, preview, report, video, github
-  - Keeps "Read more" linking to the project page (detail page unchanged)
-{% endcomment %}
+{%- assign projects_sorted = site.projects | sort: "order" -%}
 
-{% assign projects = site.projects | sort: "year" | reverse %}
+{%- assign research_projects = projects_sorted | where: "category", "research" -%}
+{%- assign hobby_projects    = projects_sorted | where: "category", "hobby" -%}
 
 <div class="project-cards">
-  {% for project in projects %}
-    <div class="row project-card g-3">
-      <!-- Left: preview image (optional) -->
-      <div class="col-12 col-sm-3 col-md-2">
-        {% if project.preview %}
-          {% assign p = project.preview | prepend: '/assets/img/project_preview/' %}
-          <div class="project-preview">
-            {% include figure.liquid
-              path=p
-              sizes="220px"
-              class="img-fluid rounded z-depth-1 project-preview-img"
-              zoomable=false
-              avoid_scaling=true
-              alt=project.title
-            %}
-          </div>
-        {% else %}
-          <div class="project-preview project-preview--empty"></div>
-        {% endif %}
-      </div>
 
-      <!-- Right: content -->
-      <div class="col-12 col-sm-9 col-md-10">
-        <!-- Title -->
-        <div class="project-title">
-          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-        </div>
+  {% if research_projects and research_projects.size > 0 %}
+    <h2 class="project-section-title">Research Projects</h2>
+    <div class="project-section-divider"></div>
 
-        <!-- Meta line (role || organization/grant || year) -->
-        <div class="project-meta">
-          {% assign meta_parts = "" | split: "|" %}
-
-          {% if project.role %}
-            {% assign meta_parts = meta_parts | push: project.role %}
-          {% endif %}
-
-          {% if project.organization %}
-            {% assign meta_parts = meta_parts | push: project.organization %}
-          {% elsif project.grant %}
-            {% assign meta_parts = meta_parts | push: project.grant %}
-          {% endif %}
-
-          {% if project.year %}
-            {% assign meta_parts = meta_parts | push: project.year %}
-          {% endif %}
-
-          {% if meta_parts.size > 0 %}
-            {% for part in meta_parts %}
-              <span class="project-meta-item">
-                {% if forloop.first %}
-                  <em>{{ part }}</em>
-                {% else %}
-                  {{ part }}
-                {% endif %}
-              </span>
-              {% unless forloop.last %}
-                <span class="project-meta-sep">||</span>
-              {% endunless %}
-            {% endfor %}
+    {% for project in research_projects %}
+      <div class="row project-card g-3">
+        <!-- Left: preview image -->
+        <div class="col-12 col-sm-3 col-md-2">
+          {% if project.preview %}
+            {% assign p = project.preview | prepend: '/assets/img/project_preview/' %}
+            <div class="project-preview">
+              {% include figure.liquid
+                path=p
+                sizes="220px"
+                class="img-fluid rounded z-depth-1"
+                zoomable=true
+                avoid_scaling=true
+                alt=project.title
+              %}
+            </div>
           {% endif %}
         </div>
 
-        <!-- One-line description -->
-        {% if project.description %}
-          <div class="project-desc">
-            {{ project.description }}
+        <!-- Right: content -->
+        <div class="col-12 col-sm-9 col-md-10">
+          <div class="project-title">
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
           </div>
-        {% endif %}
 
-        <!-- Buttons (clean academic) -->
-        {% if project.report or project.video or project.github %}
-           <div class="project-links mt-2">
-  {% if project.report %}
-    <a class="btn btn-sm btn-outline-primary me-2"
-       href="{{ project.report }}" target="_blank" rel="noopener">
-      Report
-    </a>
-  {% endif %}
+          <!-- Meta: role || organization || year -->
+          <div class="project-meta">
+            {% assign parts = "" %}
 
-  {% if project.video %}
-    <a class="btn btn-sm btn-outline-primary me-2"
-       href="{{ project.video }}" target="_blank" rel="noopener">
-      Video
-    </a>
-  {% endif %}
+            {% if project.role %}
+              {% assign parts = parts | append: project.role %}
+            {% endif %}
 
-  {% if project.github %}
-    <a class="btn btn-sm btn-outline-primary"
-       href="{{ project.github }}" target="_blank" rel="noopener">
-      GitHub
-    </a>
-  {% endif %}
+            {% if project.organization %}
+              {% if parts != "" %}{% assign parts = parts | append: " || " %}{% endif %}
+              {% assign parts = parts | append: project.organization %}
+            {% endif %}
 
-{% if project.website %}
-    <a class="btn btn-sm btn-outline-primary" 
-      href="{{ project.website }}" target="_blank" rel="noopener">
-      Website
-    </a>
-  {% endif %}
-</div>
+            {% if project.year %}
+              {% if parts != "" %}{% assign parts = parts | append: " || " %}{% endif %}
+              {% assign parts = parts | append: project.year %}
+              {% if project.status %}
+                {% assign parts = parts | append: " — " | append: project.status %}
+              {% endif %}
+            {% endif %}
 
+            {{ parts }}
+          </div>
 
-        {% endif %}
+          {% if project.description %}
+            <div class="project-desc">{{ project.description }}</div>
+          {% endif %}
 
-        <!-- Read more -->
-        <div class="project-more">
-          <a href="{{ project.url | relative_url }}">Read more →</a>
+          <div class="project-links">
+            {% if project.report %}
+              <a class="project-btn" href="{{ project.report }}" target="_blank" rel="noopener">Report</a>
+            {% endif %}
+            {% if project.video %}
+              <a class="project-btn" href="{{ project.video }}" target="_blank" rel="noopener">Video</a>
+            {% endif %}
+            {% if project.github %}
+              <a class="project-btn" href="{{ project.github }}" target="_blank" rel="noopener">Code</a>
+            {% endif %}
+            {% if project.website %}
+              <a class="project-btn" href="{{ project.website }}" target="_blank" rel="noopener">Website</a>
+            {% endif %}
+          </div>
+
+          <div class="project-more">
+            <a href="{{ project.url | relative_url }}">Read more →</a>
+          </div>
         </div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  {% endif %}
+
+
+  {% if hobby_projects and hobby_projects.size > 0 %}
+    <h2 class="project-section-title mt-5">Hobby Projects</h2>
+    <div class="project-section-divider"></div>
+
+    {% for project in hobby_projects %}
+      <div class="row project-card g-3">
+        <div class="col-12 col-sm-3 col-md-2">
+          {% if project.preview %}
+            {% assign p = project.preview | prepend: '/assets/img/project_preview/' %}
+            <div class="project-preview">
+              {% include figure.liquid
+                path=p
+                sizes="220px"
+                class="img-fluid rounded z-depth-1"
+                zoomable=true
+                avoid_scaling=true
+                alt=project.title
+              %}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="col-12 col-sm-9 col-md-10">
+          <div class="project-title">
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+          </div>
+
+          <div class="project-meta">
+            {% assign parts = "" %}
+
+            {% if project.role %}
+              {% assign parts = parts | append: project.role %}
+            {% endif %}
+
+            {% if project.organization %}
+              {% if parts != "" %}{% assign parts = parts | append: " || " %}{% endif %}
+              {% assign parts = parts | append: project.organization %}
+            {% endif %}
+
+            {% if project.year %}
+              {% if parts != "" %}{% assign parts = parts | append: " || " %}{% endif %}
+              {% assign parts = parts | append: project.year %}
+              {% if project.status %}
+                {% assign parts = parts | append: " — " | append: project.status %}
+              {% endif %}
+            {% endif %}
+
+            {{ parts }}
+          </div>
+
+          {% if project.description %}
+            <div class="project-desc">{{ project.description }}</div>
+          {% endif %}
+
+          <div class="project-links">
+            {% if project.report %}
+              <a class="project-btn" href="{{ project.report }}" target="_blank" rel="noopener">Report</a>
+            {% endif %}
+            {% if project.video %}
+              <a class="project-btn" href="{{ project.video }}" target="_blank" rel="noopener">Video</a>
+            {% endif %}
+            {% if project.github %}
+              <a class="project-btn" href="{{ project.github }}" target="_blank" rel="noopener">Code</a>
+            {% endif %}
+            {% if project.website %}
+              <a class="project-btn" href="{{ project.website }}" target="_blank" rel="noopener">Website</a>
+            {% endif %}
+          </div>
+
+          <div class="project-more">
+            <a href="{{ project.url | relative_url }}">Read more →</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% endif %}
+
 </div>
