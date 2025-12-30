@@ -444,6 +444,11 @@ ninja.data = [{
           description: "Reinforcement learning system where reward functions are generated using large language models.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/llm-reward-rl/";
+            },},{id: "projects-piano-playing-robot",
+          title: 'Piano Playing Robot',
+          description: "Robotic hand capable of playing piano keys.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/piano-robot/";
             },},{id: "projects-uav-cop-unmanned-aerial-vehicle-surveillance-system",
           title: 'UAV-Cop — Unmanned Aerial Vehicle Surveillance System',
           description: "Drone-based data collection and machine learning system for aerial monitoring.",
