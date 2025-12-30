@@ -3,7 +3,7 @@ layout: page
 title: Fire Rescue Robot
 description: Stair-climbing mobile robot for fire rescue operations.
 category: research
-order: 6
+order: 7
 year: 2018 -- 2019
 role: Project Developer
 organization: ICT Division, Bangladesh
