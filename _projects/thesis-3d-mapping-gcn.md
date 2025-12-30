@@ -2,6 +2,8 @@
 layout: page
 title: 3D Mapping Using Graph Convolutional Neural Networks for Autonomous Navigation
 description: Learning-based 3D environment representation and mapping for autonomous navigation using graph neural networks.
+category: research
+order: 4
 year: 2021
 role: Undergraduate Thesis Researcher
 organization: University of Dhaka
