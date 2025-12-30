@@ -8,11 +8,14 @@ profile:
   align: right
   image: picture.JPG
   image_circular: false # crops the image to make it circular
-  more_info: >
-  **Lecturer, Department of Computer Science and Engineering**  
-  **BRAC University**, Dhaka, Bangladesh  
+  more_info: |
+    **Lecturer, Department of Computer Science and Engineering**  
+    **BRAC University**, Dhaka, Bangladesh  
+
     [BRAC University Faculty Page](https://cse.sds.bracu.ac.bd/faculty_profile/441/utsha_kumar_roy)
+
     [utsha.kumar@bracu.ac.bd](mailto:utsha.kumar@bracu.ac.bd)
+
   
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
