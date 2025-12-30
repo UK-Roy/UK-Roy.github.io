@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /achievements/
-title: Achievements & Honours
+title: Achievements
 description: Academic awards, research recognitions, and competitive achievements.
 nav: true
 nav_order: 5
