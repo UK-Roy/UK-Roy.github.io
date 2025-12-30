@@ -409,7 +409,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-human-aware-robot-navigation-in-dynamic-crowds-using-reinforcement-learning",
+          section: "News",},{id: "projects-autonomous-underwater-docking-system-auv-docking",
+          title: 'Autonomous Underwater Docking System (AUV Docking)',
+          description: "Vision- and sensor-based docking system for autonomous underwater vehicles.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/auv-docking/";
+            },},{id: "projects-human-aware-robot-navigation-in-dynamic-crowds-using-reinforcement-learning",
           title: 'Human-Aware Robot Navigation in Dynamic Crowds using Reinforcement Learning',
           description: "Socially compliant robot navigation in dense human crowds using reinforcement learning and interaction-aware rewards.",
           section: "Projects",handler: () => {
