@@ -434,6 +434,11 @@ ninja.data = [{
           description: "Navigation stack + embedded health sensor integration for real-world hospital robotics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ihabotv2/";
+            },},{id: "projects-reward-function-generation-using-large-language-models",
+          title: 'Reward Function Generation using Large Language Models',
+          description: "Reinforcement learning system where reward functions are generated using large language models.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/llm-reward-rl/";
             },},{id: "projects-uav-cop-unmanned-aerial-vehicle-surveillance-system",
           title: 'UAV-Cop — Unmanned Aerial Vehicle Surveillance System',
           description: "Drone-based data collection and machine learning system for aerial monitoring.",
