@@ -11,7 +11,7 @@ profile:
   more_info: >
     <b>Lecturer</b><br>
     Department of Computer Science and Engineering<br>
-    <b>BRAC University</b>, Dhaka, Bangladesh<br><br>
+    <b>BRAC University</b>, Dhaka, Bangladesh<br>
     <a href="https://cse.sds.bracu.ac.bd/faculty_profile/441/utsha_kumar_roy" target="_blank" rel="noopener">Faculty Profile</a><br>
     <a href="mailto:utsha.roy@bracu.ac.bd">utsha.roy@bracu.ac.bd</a>
 
