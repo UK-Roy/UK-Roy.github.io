@@ -3,7 +3,7 @@ layout: page
 title: IHABOT & IHABOTv2 — Intelligent Hospital Assistance Robot
 description: Hospital robot navigation stack + embedded health sensor integration for real-world medical robotics.
 year: 2021 -- 2025
-role: Research Assistant (Navigation + Embedded)
+role: Research Assistant
 organization: Centennial Research Grant, University of Dhaka
 preview: ihabotv2.png
 report: https://drive.google.com/file/d/1BI4GVFCr5P-X8KBTSn49NESsbN0KPgVu/view?usp=drive_link
