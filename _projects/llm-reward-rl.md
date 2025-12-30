@@ -3,7 +3,7 @@ layout: page
 title: Reward Function Generation using Large Language Models
 description: Reinforcement learning system where reward functions are generated using large language models.
 category: hobby
-order: 10
+order: 11
 year: 2024
 role: Self Learning Project
 github: https://github.com/UK-Roy/LLM-based-Reward-based-RL-training
