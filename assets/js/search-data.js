@@ -468,6 +468,11 @@ ninja.data = [{
           description: "Robotic hand capable of playing piano keys.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/piano-robot/";
+            },},{id: "projects-3d-mapping-using-graph-convolutional-neural-networks-for-autonomous-navigation",
+          title: '3D Mapping Using Graph Convolutional Neural Networks for Autonomous Navigation',
+          description: "Learning-based 3D environment representation and mapping for autonomous navigation using graph neural networks.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/thesis-3d-mapping-gcn/";
             },},{id: "projects-uav-cop-unmanned-aerial-vehicle-surveillance-system",
           title: 'UAV-Cop — Unmanned Aerial Vehicle Surveillance System',
           description: "Drone-based data collection and machine learning system for aerial monitoring.",
