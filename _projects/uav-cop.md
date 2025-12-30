@@ -3,7 +3,7 @@ layout: page
 title: UAV-Cop — Unmanned Aerial Vehicle Surveillance System
 description: Drone-based data collection and machine learning system for aerial monitoring.
 category: research
-order: 3
+order: 4
 year: 2022 -- 2023
 role: Research Assistant
 organization: Centennial Research Grant, University of Dhaka
