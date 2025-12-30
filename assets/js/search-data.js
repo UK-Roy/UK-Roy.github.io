@@ -414,9 +414,9 @@ ninja.data = [{
           description: "Socially compliant robot navigation in dense human crowds using reinforcement learning and interaction-aware rewards.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/human-aware-navigation/";
-            },},{id: "projects-ihabotv2-intelligent-hospital-assistance-robot",
-          title: 'IHABOTv2 — Intelligent Hospital Assistance Robot',
-          description: "Navigation stack + embedded health sensor integration for real-world hospital robotics.",
+            },},{id: "projects-ihabot-amp-ihabotv2-intelligent-hospital-assistance-robot",
+          title: 'IHABOT &amp;amp; IHABOTv2 — Intelligent Hospital Assistance Robot',
+          description: "Hospital robot navigation stack + embedded health sensor integration for real-world medical robotics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ihabotv2/";
             },},{
