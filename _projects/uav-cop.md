@@ -1,6 +1,7 @@
 ---
 layout: page
 title: UAV-Cop — Unmanned Aerial Vehicle Surveillance System
+published: false
 description: Drone-based data collection and machine learning system for aerial monitoring.
 category: research
 order: 5
