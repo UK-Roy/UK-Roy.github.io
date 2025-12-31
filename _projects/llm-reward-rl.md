@@ -17,7 +17,7 @@ To explore the use of large language models for automatically generating reward 
 - Trained Panda robot in Panda-Gym environment  
 
 ## Images
-<!-- Add simulation screenshots -->
+{% include figure.liquid path="assets/img/project_preview/panda.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Links
 - GitHub: [Code]({{ page.github }})
