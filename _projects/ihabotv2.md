@@ -8,10 +8,8 @@ year: 2024 -- 2025
 role: Research Assistant
 organization: Centennial Research Grant, University of Dhaka
 preview: ihabotv2.png
-report: https://drive.google.com/file/d/1BI4GVFCr5P-X8KBTSn49NESsbN0KPgVu/view?usp=drive_link
-video: YOUR_VIDEO_LINK_HERE
-github: YOUR_GITHUB_LINK_HERE
-website: YOUR_WEBSITE_LINK_HERE
+video: https://drive.google.com/file/d/1JgtF4Q0zk7Lh9RPeljgGZzw8oLnducKW/view?usp=sharing
+code: https://github.com/tanvir-a0/IHABOTv2GUI2
 ---
 
 ## Objective
