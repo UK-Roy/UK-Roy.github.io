@@ -20,7 +20,7 @@ To design and control a robotic hand capable of playing musical notes on a piano
 
 ## Images
 <!-- Add hand design images -->
-{% include figure.liquid path="assets/img/project_preview/piano_hand.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/project_preview/piano_hand.png" caption="The mechanical finger which was designed in Solidworks" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Links
 - Video: [YouTube]({{ page.video }})
