@@ -35,6 +35,5 @@ Develop an assistance robot platform for indoor hospital environments, focusing 
 {% include figure.liquid path="assets/img/projects/ihabotv2/robot_2.png" class="img-fluid rounded z-depth-1 mt-3" zoomable=true %}
 
 ## Links
-- Report: [PDF]({{ page.report }})
 - Video: [Demo]({{ page.video }})
 - Code: [GitHub]({{ page.github }})
