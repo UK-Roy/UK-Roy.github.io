@@ -5,7 +5,7 @@ published: false
 description: Vision- and sensor-based docking system for autonomous underwater vehicles.
 category: research
 order: 6
-year: 2019 -- 2022
+year: 2019 - 2022
 role: Research Assistant
 organization: University Grants Commission of Bangladesh
 ---
