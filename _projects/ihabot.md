@@ -4,7 +4,7 @@ title: IHABOT — Intelligent Hospital Assistance Robot
 description: Navigation stack + embedded health sensor integration for real-world hospital robotics.
 category: research
 order: 4
-year: 2021 -- 2022
+year: 2021 - 2022
 role: Research Assistant
 organization: Centennial Research Grant, University of Dhaka
 preview: ihabot.png
