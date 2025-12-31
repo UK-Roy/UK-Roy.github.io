@@ -463,11 +463,6 @@ ninja.data = [{
           description: "Learning-based 3D environment representation and mapping for autonomous navigation using graph neural networks.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thesis-3d-mapping-gcn/";
-            },},{id: "projects-uav-cop-unmanned-aerial-vehicle-surveillance-system",
-          title: 'UAV-Cop — Unmanned Aerial Vehicle Surveillance System',
-          description: "Drone-based data collection and machine learning system for aerial monitoring.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/uav-cop/";
             },},{
         id: 'social-cv',
         title: 'CV',
