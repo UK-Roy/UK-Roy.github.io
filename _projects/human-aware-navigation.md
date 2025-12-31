@@ -4,13 +4,13 @@ title: Human-Aware Robot Navigation in Dynamic Crowds using Reinforcement Learni
 description: Socially compliant robot navigation in dense human crowds using reinforcement learning and interaction-aware rewards.
 category: research
 order: 2
-year: 2024 -- 2025
+year: 2024 - 2025
 role: M.Sc. Thesis Researcher
 organization: University of Dhaka (M.Sc. Thesis)
 preview: env.png
-report: YOUR_PDF_LINK_HERE
-video: YOUR_VIDEO_LINK_HERE
-github: YOUR_GITHUB_LINK_HERE
+report: https://drive.google.com/file/d/1eyLjTpHlC1ePpuc_99yy27iYEuyR5fg9/view?usp=sharing
+website: https://sites.google.com/rme.du.ac.bd/group-nav/home
+github: https://github.com/UK-Roy/crowd_nav_with_group
 ---
 
 ## Objective
