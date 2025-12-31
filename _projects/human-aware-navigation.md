@@ -7,7 +7,7 @@ order: 2
 year: 2024 -- 2025
 role: M.Sc. Thesis Researcher
 organization: University of Dhaka (M.Sc. Thesis)
-preview: human_aware_nav.png
+preview: env.png
 report: YOUR_PDF_LINK_HERE
 video: YOUR_VIDEO_LINK_HERE
 github: YOUR_GITHUB_LINK_HERE
