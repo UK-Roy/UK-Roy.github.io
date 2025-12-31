@@ -7,7 +7,7 @@ order: 4
 year: 2021
 role: Undergraduate Thesis Researcher
 organization: University of Dhaka
-preview: gcn-3d-mapping.png
+preview: 3d-map.png
 report: https://drive.google.com/file/d/15ZvZDLIIUaGCppliKd6ZbEhEyOsrPbU6/view?usp=drive_link
 ---
 
@@ -32,10 +32,7 @@ This project was my undergraduate thesis, focused on developing a learning-based
 - Evaluated learned representations for navigation and mapping quality
 
 ## Media
-<!-- You can add figures later -->
-<!--
-{% include figure.liquid path="assets/img/projects/gcn-mapping/overview.png" class="img-fluid rounded z-depth-1" zoomable=true %}
--->
+{% include figure.liquid path="assets/img/project_preview/our-map.png" caption="Quantitative results of 3D map on the SemanticKITTI validation set. Red Circles indicated Comparison between the existing and our approach" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Links
 - Dissertation Report: [PDF]({{ page.report }})
