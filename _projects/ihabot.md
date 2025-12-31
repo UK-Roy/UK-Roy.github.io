@@ -7,7 +7,7 @@ order: 4
 year: 2021 -- 2022
 role: Research Assistant
 organization: Centennial Research Grant, University of Dhaka
-preview: ihabotv.png
+preview: ihabot.png
 report: https://drive.google.com/file/d/1BI4GVFCr5P-X8KBTSn49NESsbN0KPgVu/view?usp=drive_link
 video: YOUR_VIDEO_LINK_HERE
 github: YOUR_GITHUB_LINK_HERE
