@@ -4,8 +4,7 @@ title: IHABOTv2 — Intelligent Hospital Assistance Robot
 description: Navigation stack + embedded health sensor integration for real-world hospital robotics.
 category: research
 order: 1
-year: 2024
-status: ongoing
+year: 2024 -- 2025
 role: Research Assistant
 organization: Centennial Research Grant, University of Dhaka
 preview: ihabotv2.png
