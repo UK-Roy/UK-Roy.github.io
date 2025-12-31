@@ -6,6 +6,7 @@ category: hobby
 order: 11
 year: 2024
 role: Self Learning Project
+preview: panda.png
 github: https://github.com/UK-Roy/LLM-based-Reward-based-RL-training
 ---
 
