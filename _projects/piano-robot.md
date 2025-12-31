@@ -7,6 +7,7 @@ order: 12
 year: 2018
 role: B.Sc. Course Project
 organization: Fundamental of Mechatronics Engineering Lab
+preview: piano.png
 video: https://youtu.be/oc1MBdTlt_k
 ---
 
@@ -19,6 +20,7 @@ To design and control a robotic hand capable of playing musical notes on a piano
 
 ## Images
 <!-- Add hand design images -->
+{% include figure.liquid path="assets/img/project_preview/piano_hand.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Links
 - Video: [YouTube]({{ page.video }})
