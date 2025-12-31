@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Fire Rescue Robot
+published: false
 description: Stair-climbing mobile robot for fire rescue operations.
 category: research
 order: 7
