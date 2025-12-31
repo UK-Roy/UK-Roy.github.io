@@ -7,6 +7,7 @@ order: 10
 year: 2024
 role: M.Sc. Course Project
 organization: Computer Vision
+preview: aruco.jpg
 github: https://github.com/UK-Roy/camera-calibration-aruco
 ---
 
@@ -18,7 +19,7 @@ To build a reusable Python package for calibrating RGB cameras used in robotics 
 - Developed reusable Python APIs for robotics applications  
 
 ## Images
-<!-- Add calibration results -->
+{% include figure.liquid path="assets/img/project_preview/result.png" caption="Results of calibration file in yaml format" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Links
 - GitHub: [Code]({{ page.github }})
