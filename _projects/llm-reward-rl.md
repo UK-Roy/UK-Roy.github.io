@@ -32,6 +32,8 @@ def compute_reward(self, achieved_goal, desired_goal, info):
     return reward
 
 ```
+
+## Images
 {% include figure.liquid
   path="assets/img/project_preview/panda.png"
   caption="Panda Robot is pushing an object based on the given reward by the LLaMA2"
