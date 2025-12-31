@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Autonomous Underwater Docking System (AUV Docking)
+published: false
 description: Vision- and sensor-based docking system for autonomous underwater vehicles.
 category: research
 order: 6
