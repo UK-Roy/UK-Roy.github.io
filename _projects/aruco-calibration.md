@@ -19,7 +19,7 @@ To build a reusable Python package for calibrating RGB cameras used in robotics 
 - Developed reusable Python APIs for robotics applications  
 
 ## Images
-{% include figure.liquid path="assets/img/project_preview/result.png" caption="Results of calibration file in yaml format" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/project_preview/yaml.png" caption="Results of calibration file in yaml format" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Links
 - GitHub: [Code]({{ page.github }})
