@@ -9,7 +9,7 @@ role: Research Assistant
 organization: Centennial Research Grant, University of Dhaka
 preview: ihabotv2.png
 video: https://drive.google.com/file/d/1JgtF4Q0zk7Lh9RPeljgGZzw8oLnducKW/view?usp=sharing
-code: https://github.com/tanvir-a0/IHABOTv2GUI2
+github: https://github.com/tanvir-a0/IHABOTv2GUI2
 ---
 
 ## Objective
