@@ -31,8 +31,8 @@ Develop an assistance robot platform for indoor hospital environments, focusing 
 - Key improvements over iterations (IHABOT → IHABOTv2)
 
 ## Media (add later)
-{% include figure.liquid path="assets/img/projects/ihabotv2/robot_1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-{% include figure.liquid path="assets/img/projects/ihabotv2/robot_2.png" class="img-fluid rounded z-depth-1 mt-3" zoomable=true %}
+{% include figure.liquid path="assets/img/project_preview/feature.png" caption="Overview of IHABOTv2's Feature" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/project_preview/prize.png" caption="A glimpse of ihabotv2 with my supervisor and Tanvir, when research collaborations unexpectedly turn into memorable moments." class="img-fluid rounded z-depth-1 mt-3" zoomable=true %}
 
 ## Links
 - Video: [Demo]({{ page.video }})
