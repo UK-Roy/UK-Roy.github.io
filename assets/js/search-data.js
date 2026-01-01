@@ -445,7 +445,7 @@ ninja.data = [{
               window.location.href = "/projects/ihabot/";
             },},{id: "projects-ihabotv2-intelligent-hospital-assistance-robot",
           title: 'IHABOTv2 — Intelligent Hospital Assistance Robot',
-          description: "Navigation stack + embedded health sensor integration for real-world hospital robotics.",
+          description: "IHABOTv2 is an intelligent autonomous hospital assistance robot designed for real-time patient monitoring, early clinical risk detection, and reducing nurse workload in hospital environments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ihabotv2/";
             },},{id: "projects-industrial-iot-based-production-monitoring-system-for-injection-molding-machines",
