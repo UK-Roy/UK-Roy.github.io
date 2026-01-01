@@ -36,5 +36,4 @@ In website many results are shown. So, please visit the [website]({{ page.websit
 
 ## Links
 - Report: [PDF]({{ page.report }})
-- Video: [Demo]({{ page.video }})
 - Code: [GitHub]({{ page.github }})
