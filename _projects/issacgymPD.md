@@ -68,9 +68,11 @@ Stable but incapable of precise end-effector positioning in constrained task spa
 The task objective is defined in **Cartesian space**, focusing on the tool tip position.
 
 End-effector error:
+
 $$
 e = x_{\text{target}} - x_{\text{tip}}
 $$
+
 
 The controller attempts to reduce this error indirectly through joint torques.
 
