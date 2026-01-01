@@ -21,8 +21,9 @@ Build a navigation policy that remains safe, efficient, and socially compliant i
 - Integrated perception + policy + planning into a usable navigation stack
 - Built evaluation scenarios across multiple crowd densities
 
-## Methods / Stack
-- RL policy training (sim-to-sim evaluation)
+## Methods
+- First we build a modular reactive based group avodance algorithm named TAGA(A Tangent-Based Group Avoidance Controller)
+- Then moved to RL policy training (sim-to-sim evaluation)
 - Reward shaping for comfort + safety + efficiency
 - Metrics: Group Collision rate(our proposal metric for group navigation performance)
 
