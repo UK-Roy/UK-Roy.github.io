@@ -27,9 +27,13 @@ The objective of the IHABOTv2 project is to design and develop an intelligent au
 
 
 ## Media
+<div class="text-center">
 {% include figure.liquid path="assets/img/project_preview/feature.png" caption="Overview of IHABOTv2's Feature" class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
-{% include figure.liquid path="assets/img/project_preview/prize.png" caption="A glimpse of ihabotv2 with my supervisor and Tanvir, when research collaborations unexpectedly turn into memorable moments." class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
+</div>
 
+<div class="text-center">
+{% include figure.liquid path="assets/img/project_preview/prize.png" caption="A glimpse of ihabotv2 with my supervisor and Tanvir, when research collaborations unexpectedly turn into memorable moments." class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
+</div>
 ## Links
 - Video: [Demo]({{ page.video }})
 - Code: [GitHub]({{ page.github }})
