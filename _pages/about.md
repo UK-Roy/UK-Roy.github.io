@@ -6,7 +6,7 @@ subtitle: Robots, Roads, and a Curious Mind
 
 profile:
   align: right
-  image: picture.JPG
+  image: profile.png
   image_circular: false
   more_info: >
     <b>Lecturer</b><br>
