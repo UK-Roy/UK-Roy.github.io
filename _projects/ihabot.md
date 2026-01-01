@@ -44,7 +44,7 @@ Develop an assistance robot platform for indoor hospital environments, focusing 
     >
   </a>
   <figcaption class="figure-caption text-center">
-    Exercise Assessment Video using STGCN (For see the reults, please click in the image)
+    Exercise Assessment Video using STGCN <strong><span style="color:#b23bcf;">(For see the reults, please click in the image)</span></strong>
   </figcaption>
 </figure>
 
