@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Task-Space Control of a Medical Manipulator in Isaac Gym
 description: PD, task-space, and Jacobian-based IK control of a medical manipulator using GPU-accelerated simulation.
 category: hobby
@@ -10,148 +11,150 @@ math: true
 github: https://github.com/UK-Roy/medical_manipulator
 ---
 
+## Overview
+This project studies **classical control and task-space manipulation** of a medical robotic arm using **NVIDIA Isaac Gym**, with the goal of understanding the strengths and limitations of analytical controllers before transitioning to learning-based frameworks such as **Isaac Lab**.
+
+The emphasis is on **simulation-first experimentation**, focusing on control stability, task-space behavior, and GPU-accelerated physics rather than sim-to-real transfer.
 
 ---
 
 ## Motivation
+Recent advances in robotic manipulation increasingly rely on learning-based frameworks.  
+However, such approaches are best understood when grounded in **classical control baselines**.
 
-Modern robotic manipulation research increasingly relies on **reinforcement learning frameworks** (e.g., Isaac Lab).  
-However, learning-based methods are best understood when grounded in **classical control baselines**.
-
-This project was designed to:
-
-- Establish a **stable joint-space PD controller**
+This project aims to:
+- Establish a stable **joint-space PD controller**
 - Extend control to **task-space (end-effector) objectives**
-- Explore **Jacobian-based inverse kinematics (IK)**
-- Identify failure modes that motivate **MPC and RL-based approaches**
+- Investigate **Jacobian-based inverse kinematics**
+- Expose controller limitations that motivate **MPC and learning-based methods**
 
 ---
 
 ## Simulation Environment
-
 - **Simulator:** NVIDIA Isaac Gym (Preview 4)
 - **Physics Engine:** GPU PhysX
-- **Platform:** Ubuntu Linux, NVIDIA RTX GPU
-- **Robot Model:** Custom medical manipulator (URDF-based)
-- **Control Frequency:** Fixed-step GPU simulation loop
+- **Platform:** Ubuntu Linux with NVIDIA RTX GPU
+- **Robot Model:** Custom URDF-based medical manipulator
+- **Control Loop:** Fixed-step GPU simulation
 
-The manipulator is evaluated in a constrained workspace resembling **medical tool navigation**, including corridor-like target regions.
+The manipulator operates in a constrained workspace resembling **medical tool navigation corridors**.
 
 ---
 
 ## Control Pipeline
 
-### 1. Joint-Space PD Control
-A classical **PD controller** is applied at the joint level:
+### Joint-Space PD Control
+A classical proportional-derivative controller is applied at the joint level:
 
-$$
+\[
 \tau = K_p (q_{\text{des}} - q) + K_d (\dot{q}_{\text{des}} - \dot{q})
-$$
+\]
 
-This controller ensures:
-- Stable simulation
-- Correct DOF indexing
-- Proper torque application
-- Baseline dynamic behavior
+This controller provides:
+- Stable simulation behavior  
+- Correct DOF indexing  
+- Proper torque application  
+- Baseline dynamic consistency  
 
 **Outcome:**  
-Stable but incapable of precise end-effector positioning in constrained task spaces.
+Stable joint motion, but insufficient precision for constrained end-effector positioning.
 
 ---
 
-### 2. Task-Space Control (End-Effector)
-The task objective is defined in **Cartesian space**, focusing on the tool tip position.
+### Task-Space Control (End-Effector)
+The task objective is defined in Cartesian space, focusing on the tool-tip position.
 
-End-effector error:
-
-$$
+\[
 e = x_{\text{target}} - x_{\text{tip}}
-$$
-
+\]
 
 The controller attempts to reduce this error indirectly through joint torques.
 
 **Limitation:**  
-Pure task-space error without proper Jacobian handling leads to slow convergence and poor constraint handling.
+Without explicit Jacobian reasoning, convergence is slow and constraint handling is weak.
 
 ---
 
-### 3. Jacobian-Based Inverse Kinematics (IK)
-A differential IK controller is implemented using the manipulator Jacobian:
+### Jacobian-Based Inverse Kinematics
+A differential inverse kinematics controller is implemented using the manipulator Jacobian:
 
-$$
-\dot{q} = J^\top \bigl(x_{\text{target}} - x_{\text{tip}}\bigr)
-$$
+\[
+\dot{q} = J^\top \left( x_{\text{target}} - x_{\text{tip}} \right)
+\]
 
 This enables:
-- Explicit task-space reasoning
-- Directional joint updates
-- Better alignment with end-effector goals
+- Explicit task-space reasoning  
+- Directional joint updates  
+- Improved alignment with end-effector goals  
 
 **Observed Issues:**
-- Sensitivity to Jacobian conditioning
-- Difficulty near singular configurations
-- No explicit handling of joint limits or obstacles
+- Sensitivity to Jacobian conditioning  
+- Instability near singular configurations  
+- No explicit handling of joint limits or obstacles  
 
 ---
 
 ## Results
+- The manipulator consistently moves toward the target, validating Jacobian-based control.
+- Precise convergence is not guaranteed in constrained environments.
+- Oscillations and slow settling are observed under PD + IK control.
 
-- The robot **successfully moves toward the target**, validating Jacobian-based control.
-- However, **precise convergence is not guaranteed**, especially in constrained corridors.
-- Oscillations and slow settling occur under PD + IK control.
-
-This behavior is expected and highlights the **fundamental limitations of purely analytical controllers** in complex task spaces.
+These behaviors highlight the **fundamental limitations of purely analytical controllers** in complex task spaces.
 
 ---
 
 ## Key Insights
-
-- PD control is reliable for **stability**, not task completion
-- Task-space objectives require **explicit geometric reasoning**
-- Jacobian-based IK improves directionality but lacks robustness
-- These limitations naturally motivate:
+- PD control ensures stability but not task completion  
+- Task-space objectives require geometric reasoning  
+- Jacobian-based IK improves directionality but lacks robustness  
+- These limitations motivate:
   - Model Predictive Control (MPC)
-  - Learning-based policies (RL)
+  - Learning-based manipulation policies
 
 ---
 
 ## Why This Leads to Isaac Lab
+This project provides a **control-grounded entry point** to Isaac Lab:
 
-This project serves as a **control-grounded entry point** to Isaac Lab:
+- *Isaac Gym* → physics and controller validation  
+- *Isaac Lab* → policy learning on top of validated dynamics  
 
-- Isaac Gym → understanding physics + control
-- Isaac Lab → policy learning on top of validated dynamics
+By exposing controller limitations first, the transition to reinforcement learning becomes principled rather than ad hoc.
 
-By first exposing controller limitations, the motivation for **reinforcement learning** becomes clear and principled rather than ad hoc.
+---
+
+## Visual Results
+
+{% include figure.liquid
+  path="assets/img/project_preview/step1.png"
+  caption="Isaac Gym simulation environment"
+  class="img-fluid rounded z-depth-1"
+  zoomable=true
+%}
+
+{% include figure.liquid
+  path="assets/img/project_preview/tip_error.png"
+  caption="End-effector position error over time"
+  class="img-fluid rounded z-depth-1"
+  zoomable=true
+%}
+
+{% include figure.liquid
+  path="assets/img/project_preview/control_effort.png"
+  caption="Joint-space control effort"
+  class="img-fluid rounded z-depth-1"
+  zoomable=true
+%}
 
 ---
 
-## Images
-<div class="text-center">
-{% include figure.liquid path="assets/img/project_preview/step1.png" caption="The isaacgym " class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
-</div>
----
-
-## Results
-<div class="text-center">
-{% include figure.liquid path="assets/img/project_preview/tip_error.png" caption="Tip" class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
-</div>
-<br>
-<div class="text-center">
-{% include figure.liquid path="assets/img/project_preview/control_effort.png" caption="Control Effort" class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
-</div>
-
----
 ## Future Extensions
-
-- MPC-based trajectory tracking
-- Constraint-aware optimization
-- RL policy learning using Isaac Lab
-- Human-aware or safety-aware manipulation objectives
+- MPC-based trajectory optimization  
+- Constraint-aware control  
+- Learning-based policies using Isaac Lab  
+- Safety-aware or human-aware manipulation objectives  
 
 ---
 
 ## Links
-- [Code]({{ page.github }})
-
+- **Code:** [GitHub Repository]({{ page.github }})
