@@ -453,6 +453,11 @@ ninja.data = [{
           description: "Low-cost real-time production and machine monitoring system for legacy injection molding machines.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/industrial-iot-injection-molding/";
+            },},{id: "projects-task-space-control-of-a-medical-manipulator-in-isaac-gym",
+          title: 'Task-Space Control of a Medical Manipulator in Isaac Gym',
+          description: "PD, task-space, and Jacobian-based IK control of a medical manipulator using GPU-accelerated simulation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/issacgymPD/";
             },},{id: "projects-reward-function-generation-using-large-language-models",
           title: 'Reward Function Generation using Large Language Models',
           description: "Reinforcement learning system where reward functions are generated using large language models.",
