@@ -123,28 +123,32 @@ By exposing controller limitations first, the transition to reinforcement learni
 ---
 
 ## Visual Results
-
+<div class="text-center">
 {% include figure.liquid
   path="assets/img/project_preview/step1.png"
   caption="Isaac Gym simulation environment"
   class="img-fluid rounded z-depth-1 w-75"
   zoomable=true
 %}
+</div>
 
+<div class="text-center">
 {% include figure.liquid
   path="assets/img/project_preview/tip_error.png"
   caption="End-effector position error over time"
   class="img-fluid rounded z-depth-1 w-75"
   zoomable=true
 %}
+</div>
 
+<div class="text-center">
 {% include figure.liquid
   path="assets/img/project_preview/control_effort.png"
   caption="Joint-space control effort"
   class="img-fluid rounded z-depth-1 w-75"
   zoomable=true
 %}
-
+</div>
 ---
 
 ## Future Extensions
