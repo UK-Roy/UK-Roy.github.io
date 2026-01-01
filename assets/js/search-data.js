@@ -440,7 +440,7 @@ ninja.data = [{
               window.location.href = "/projects/human-aware-navigation/";
             },},{id: "projects-ihabot-intelligent-hospital-assistance-robot",
           title: 'IHABOT — Intelligent Hospital Assistance Robot',
-          description: "Navigation stack + embedded health sensor integration for real-world hospital robotics.",
+          description: "Autonomous medical assistive robot developed to minimize direct doctor–patient contact in hospital environments during contagious disease outbreaks",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ihabot/";
             },},{id: "projects-ihabotv2-intelligent-hospital-assistance-robot",
