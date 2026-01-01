@@ -262,6 +262,9 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
+author_highlight:
+  - Utsha Kumar Roy
+  - Roy, Utsha Kumar
 
 scholar:
   last_name: [Roy]
