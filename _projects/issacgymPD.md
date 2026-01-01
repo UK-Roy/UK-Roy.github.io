@@ -6,6 +6,7 @@ order: 6
 year: 2024
 role: BioRobotics Course Project
 preview: tip.png
+math: true
 github: https://github.com/UK-Roy/medical_manipulator
 ---
 
