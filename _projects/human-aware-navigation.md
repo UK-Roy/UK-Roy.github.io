@@ -30,9 +30,8 @@ Build a navigation policy that remains safe, efficient, and socially compliant i
 - Summarize best-performing policy settings
 - Key tradeoffs observed (speed vs comfort, etc.)
 
-## Media (add later)
-{% include figure.liquid path="assets/img/projects/human_aware_nav/overview.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-{% include figure.liquid path="assets/img/projects/human_aware_nav/result_1.png" class="img-fluid rounded z-depth-1 mt-3" zoomable=true %}
+## Media
+In website many results are shown. So, please visit the [website]({{ page.website }}) for see the results.
 
 ## Links
 - Report: [PDF]({{ page.report }})
