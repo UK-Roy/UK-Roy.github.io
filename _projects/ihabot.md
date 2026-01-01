@@ -32,13 +32,13 @@ Develop an assistance robot platform for indoor hospital environments, focusing 
 
 ## Media
 
-{% include figure.liquid path="assets/img/project_preview/ihabot_design.jpeg" caption="Design of IHABoT" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/project_preview/ihabot_design.jpeg" caption="Design of IHABoT" class="img-fluid rounded z-depth-1" style="max-width: 600px;" zoomable=true %}
 
 <figure class="figure">
   <a href="https://drive.google.com/file/d/1TDzUrwhL7D6qM4a3UZmxt89KlB_KUAmg/preview" target="_blank" rel="noopener">
     <img
       src="{{ 'assets/img/project_preview/stgcn.png' | relative_url }}"
-      class="img-fluid rounded z-depth-1"
+      class="img-fluid rounded z-depth-1 w-75"
       alt="Exercise Assessment Video using STGCN"
     >
   </a>
