@@ -14,7 +14,7 @@ github: https://github.com/UK-Roy/crowd_nav_with_group
 ---
 
 ## Objective
-Build a navigation policy that remains safe, efficient, and socially compliant in dense, dynamic crowds.
+Build a navigation policy that remains safe, efficient, and socially compliant in dense (specially if group of human's are also present), dynamic crowds.
 
 ## My role
 - Designed the RL formulation (state, reward, training protocol)
