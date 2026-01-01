@@ -46,9 +46,8 @@ The manipulator operates in a constrained workspace resembling **medical tool na
 ### Joint-Space PD Control
 A classical proportional-derivative controller is applied at the joint level:
 
-\[
-\tau = K_p (q_{\text{des}} - q) + K_d (\dot{q}_{\text{des}} - \dot{q})
-\]
+$\tau = K_p (q_{\text{des}} - q) + K_d (\dot{q}_{\text{des}} - \dot{q})$
+
 
 This controller provides:
 - Stable simulation behavior  
