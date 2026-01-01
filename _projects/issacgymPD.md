@@ -131,30 +131,19 @@ By first exposing controller limitations, the motivation for **reinforcement lea
 ---
 
 ## Images
-{% include figure.liquid
-  path="assets/img/project_preview/step1.png"
-  caption="Panda Robot is pushing an object based on the given reward by the LLaMA2"
-  class="img-fluid rounded z-depth-1"
-  zoomable=true
-%}
-
+<div class="text-center">
+{% include figure.liquid path="assets/img/project_preview/step1.png" caption="The isaacgym " class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
+</div>
 ---
 
 ## Results
-{% include figure.liquid
-  path="assets/img/project_preview/tip_error.png"
-  caption="Tip"
-  class="img-fluid rounded z-depth-1"
-  zoomable=true
-%}
-
-{% include figure.liquid
-  path="assets/img/project_preview/control_effort.png"
-  caption="Control Effort"
-  class="img-fluid rounded z-depth-1"
-  zoomable=true
-%}
-
+<div class="text-center">
+{% include figure.liquid path="assets/img/project_preview/tip_error.png" caption="Tip" class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
+</div>
+<br>
+<div class="text-center">
+{% include figure.liquid path="assets/img/project_preview/control_effort.png" caption="Control Effort" class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
+</div>
 
 ---
 ## Future Extensions
