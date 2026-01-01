@@ -6,8 +6,7 @@ order: 6
 year: 2024
 role: BioRobotics Course Project
 preview: tip.png
-video: ""
-github: https://github.com/UK-Roy/LLM-based-Reward-based-RL-training
+github: https://github.com/UK-Roy/medical_manipulator
 ---
 
 ## Overview
@@ -159,5 +158,4 @@ By first exposing controller limitations, the motivation for **reinforcement lea
 
 ## Links
 - [Code]({{ page.github }})
-- [Video]({{ page.video }})
 
