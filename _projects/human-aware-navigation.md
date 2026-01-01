@@ -24,7 +24,7 @@ Build a navigation policy that remains safe, efficient, and socially compliant i
 ## Methods / Stack
 - RL policy training (sim-to-sim evaluation)
 - Reward shaping for comfort + safety + efficiency
-- Metrics: collision rate, time-to-goal, comfort, group interference (if used)
+- Metrics: Group Collision rate(our proposal metric for group navigation performance)
 
 ## Results (high-level)
 - Summarize best-performing policy settings
