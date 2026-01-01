@@ -40,7 +40,7 @@ The objective of this project was to design and develop an autonomous medical as
     >
   </a>
   <figcaption class="figure-caption text-center">
-    Exercise Assessment Video using STGCN <strong><span style="color:#b23bcf;">(For see the reults, please click in the image)</span></strong>
+    Exercise Assessment Video using STGCN <strong><span style="color:#b23bcf;">(To see the reults, please click in the image)</span></strong>
   </figcaption>
 </figure>
 
