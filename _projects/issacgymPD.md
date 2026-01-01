@@ -49,9 +49,9 @@ The manipulator is evaluated in a constrained workspace resembling **medical too
 ### 1. Joint-Space PD Control
 A classical **PD controller** is applied at the joint level:
 
-\[
-\tau = K_p (q_{des} - q) + K_d (\dot{q}_{des} - \dot{q})
-\]
+$$
+\tau = K_p (q_{\text{des}} - q) + K_d (\dot{q}_{\text{des}} - \dot{q})
+$$
 
 This controller ensures:
 - Stable simulation
@@ -68,9 +68,9 @@ Stable but incapable of precise end-effector positioning in constrained task spa
 The task objective is defined in **Cartesian space**, focusing on the tool tip position.
 
 End-effector error:
-\[
-e = x_{target} - x_{tip}
-\]
+$$
+e = x_{\text{target}} - x_{\text{tip}}
+$$
 
 The controller attempts to reduce this error indirectly through joint torques.
 
@@ -82,9 +82,9 @@ Pure task-space error without proper Jacobian handling leads to slow convergence
 ### 3. Jacobian-Based Inverse Kinematics (IK)
 A differential IK controller is implemented using the manipulator Jacobian:
 
-\[
-\dot{q} = J^\top (x_{target} - x_{tip})
-\]
+$$
+\dot{q} = J^\top \bigl(x_{\text{target}} - x_{\text{tip}}\bigr)
+$$
 
 This enables:
 - Explicit task-space reasoning
