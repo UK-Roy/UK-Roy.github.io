@@ -138,6 +138,23 @@ By first exposing controller limitations, the motivation for **reinforcement lea
   zoomable=true
 %}
 
+---
+
+## Results
+{% include figure.liquid
+  path="assets/img/project_preview/tip_error.png"
+  caption="Tip"
+  class="img-fluid rounded z-depth-1"
+  zoomable=true
+%}
+
+{% include figure.liquid
+  path="assets/img/project_preview/control_effort.png"
+  caption="Control Effort"
+  class="img-fluid rounded z-depth-1"
+  zoomable=true
+%}
+
 
 ---
 ## Future Extensions
