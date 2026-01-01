@@ -9,9 +9,7 @@ role: Research Assistant
 organization: Centennial Research Grant, University of Dhaka
 preview: ihabot.png
 report: https://drive.google.com/file/d/1BI4GVFCr5P-X8KBTSn49NESsbN0KPgVu/view?usp=drive_link
-video: YOUR_VIDEO_LINK_HERE
-github: YOUR_GITHUB_LINK_HERE
-website: YOUR_WEBSITE_LINK_HERE
+video: https://drive.google.com/file/d/1b-JXv2Bz7If3wSBjo9QHkDR-wD9Vo62I/view?usp=sharing
 ---
 
 ## Objective
@@ -30,7 +28,7 @@ Develop an assistance robot platform for indoor hospital environments, focusing 
 
 ## Results (high-level)
 - Real/Sim test summary (routes, stability, success rate)
-- Key improvements over iterations (IHABOT → IHABOTv2)
+- Key improvements over iterations
 
 ## Media (add later)
 {% include figure.liquid path="assets/img/projects/ihabotv2/robot_1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
