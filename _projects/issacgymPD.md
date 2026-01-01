@@ -5,7 +5,7 @@ category: hobby
 order: 6
 year: 2024
 role: BioRobotics Course Project
-preview: panda.png
+preview: tip.png
 video: ""
 github: https://github.com/UK-Roy/LLM-based-Reward-based-RL-training
 ---
@@ -132,7 +132,7 @@ By first exposing controller limitations, the motivation for **reinforcement lea
 
 ## Images
 {% include figure.liquid
-  path="assets/img/project_preview/panda.png"
+  path="assets/img/project_preview/step1.png"
   caption="Panda Robot is pushing an object based on the given reward by the LLaMA2"
   class="img-fluid rounded z-depth-1"
   zoomable=true
