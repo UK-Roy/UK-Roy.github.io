@@ -63,9 +63,9 @@ Stable joint motion, but insufficient precision for constrained end-effector pos
 ### Task-Space Control (End-Effector)
 The task objective is defined in Cartesian space, focusing on the tool-tip position.
 
-\[
+$
 e = x_{\text{target}} - x_{\text{tip}}
-\]
+$
 
 The controller attempts to reduce this error indirectly through joint torques.
 
@@ -77,9 +77,9 @@ Without explicit Jacobian reasoning, convergence is slow and constraint handling
 ### Jacobian-Based Inverse Kinematics
 A differential inverse kinematics controller is implemented using the manipulator Jacobian:
 
-\[
+$
 \dot{q} = J^\top \left( x_{\text{target}} - x_{\text{tip}} \right)
-\]
+$
 
 This enables:
 - Explicit task-space reasoning  
