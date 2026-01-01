@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IHABOT — Intelligent Hospital Assistance Robot
-description: Navigation stack + embedded health sensor integration for real-world hospital robotics.
+description: Autonomous medical assistive robot developed to minimize direct doctor–patient contact in hospital environments during contagious disease outbreaks
 category: research
 order: 4
 year: 2021 - 2022
@@ -13,22 +13,18 @@ video: https://drive.google.com/file/d/1b-JXv2Bz7If3wSBjo9QHkDR-wD9Vo62I/view?us
 ---
 
 ## Objective
-Develop an assistance robot platform for indoor hospital environments, focusing on autonomous navigation and patient-support features.
+The objective of this project was to design and develop an autonomous medical assistive robot capable of safe and reliable operation in hospital environments, with the goal of minimizing direct doctor–patient contact during contagious disease outbreaks. Emphasis was placed on robust autonomous navigation, system reliability in real-world clinical settings, and practical deployment to support healthcare professionals while reducing the risk of disease transmission.
 
 ## My role
 - Led autonomous navigation stack development
 - Implemented navigation + perception for indoor medical environments
 - Integrated health-monitoring sensors for real-time patient data acquisition
-- Applied ML models on physiological sensor data for decision support
+- Developed an RGB-D sensing framework using Kinect v2 to acquire spatio-temporal 3D human skeletal joint data for exercise assessment
 
 ## Methods / Stack
-- ROS/ROS2 navigation (planning, localization, obstacle avoidance)
-- Sensor stack: LiDAR/camera/IMU (as applicable)
-- Embedded integration for vitals acquisition
-
-## Results (high-level)
-- Real/Sim test summary (routes, stability, success rate)
-- Key improvements over iterations
+- ROS(Noetic) Navigation Stack (planning, localization, obstacle avoidance)
+- Sensor stack: LiDAR
+- RGB-D–based skeletal joint data were processed using an ST-GCN to predict exercise performance scores
 
 ## Media
 <div class="text-center">
