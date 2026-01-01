@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IHABOTv2 — Intelligent Hospital Assistance Robot
-description: Navigation stack + embedded health sensor integration for real-world hospital robotics.
+description: IHABOTv2 is an intelligent autonomous hospital assistance robot designed for real-time patient monitoring, early clinical risk detection, and reducing nurse workload in hospital environments.
 category: research
 order: 1
 year: 2024 - 2025
@@ -13,24 +13,20 @@ github: https://github.com/tanvir-a0/IHABOTv2GUI2
 ---
 
 ## Objective
-Develop an assistance robot platform for indoor hospital environments, focusing on autonomous navigation and patient-support features.
+The objective of the IHABOTv2 project is to design and develop an intelligent autonomous hospital assistance robot capable of performing continuous patient monitoring, early clinical risk detection, and assistive healthcare tasks in real hospital environments. The system aims to reduce nurse workload and minimize unnecessary human exposure to infectious conditions by integrating autonomous navigation, multi-parameter vital sign monitoring, and intelligent data interpretation. A key goal of the project is to deliver an affordable, deployable, and reliable robotic solution suitable for resource-constrained hospitals, while supporting timely clinical decision-making and improving patient safety.
 
-## My role
-- Led autonomous navigation stack development
-- Implemented navigation + perception for indoor medical environments
-- Integrated health-monitoring sensors for real-time patient data acquisition
-- Applied ML models on physiological sensor data for decision support
+## My Role
 
-## Methods / Stack
-- ROS/ROS2 navigation (planning, localization, obstacle avoidance)
-- Sensor stack: LiDAR/camera/IMU (as applicable)
-- Embedded integration for vitals acquisition
+- Led the overall project development and technical direction of the IHABOTv2 system  
+- Designed and implemented the complete autonomous navigation stack for indoor hospital environments  
+- Developed perception and localization modules for reliable operation in real-world clinical settings  
+- Integrated multi-parameter vital sign sensors, including SpO₂, blood pressure, and body temperature, with real-time data acquisition and visualization through a custom user interface  
+- Developed an **Early Warning Score (EWS)** system based on physiological vital data for early detection of patient health deterioration  
+- Designed and implemented the robotic manipulator pipeline for autonomous medicine delivery  
+- Applied machine learning techniques to physiological sensor data for clinical decision support and proactive caregiver alerts  
 
-## Results (high-level)
-- Real/Sim test summary (routes, stability, success rate)
-- Key improvements over iterations (IHABOT → IHABOTv2)
 
-## Media (add later)
+## Media
 {% include figure.liquid path="assets/img/project_preview/feature.png" caption="Overview of IHABOTv2's Feature" class="img-fluid rounded z-depth-1" zoomable=true %}
 {% include figure.liquid path="assets/img/project_preview/prize.png" caption="A glimpse of ihabotv2 with my supervisor and Tanvir, when research collaborations unexpectedly turn into memorable moments." class="img-fluid rounded z-depth-1 mt-3" zoomable=true %}
 
