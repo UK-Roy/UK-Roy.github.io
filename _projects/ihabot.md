@@ -31,15 +31,16 @@ Develop an assistance robot platform for indoor hospital environments, focusing 
 - Key improvements over iterations
 
 ## Media
+<div class="text-center">
+{% include figure.liquid path="assets/img/project_preview/ihabot_design.jpeg" caption="Design of IHABOT" class="img-fluid rounded z-depth-1 w-75" zoomable=true %}
+</div>
 
-{% include figure.liquid path="assets/img/project_preview/ihabot_design.jpeg" caption="Design of IHABoT" class="img-fluid rounded z-depth-1" style="max-width: 600px;" zoomable=true %}
-
-<figure class="figure">
+<figure class="figure text-center">
   <a href="https://drive.google.com/file/d/1TDzUrwhL7D6qM4a3UZmxt89KlB_KUAmg/preview" target="_blank" rel="noopener">
     <img
       src="{{ 'assets/img/project_preview/stgcn.png' | relative_url }}"
-      class="img-fluid rounded z-depth-1 w-75"
-      alt="Exercise Assessment Video using STGCN"
+      class="img-fluid rounded z-depth-1 w-75 mx-auto d-block"
+      alt="Exercise Assessment Video using STGCN(For see the reults, please click in the image)"
     >
   </a>
   <figcaption class="figure-caption text-center">
