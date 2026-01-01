@@ -40,11 +40,11 @@ Develop an assistance robot platform for indoor hospital environments, focusing 
     <img
       src="{{ 'assets/img/project_preview/stgcn.png' | relative_url }}"
       class="img-fluid rounded z-depth-1 w-75 mx-auto d-block"
-      alt="Exercise Assessment Video using STGCN(For see the reults, please click in the image)"
+      alt="Exercise Assessment Video using STGCN"
     >
   </a>
   <figcaption class="figure-caption text-center">
-    Exercise Assessment Video using STGCN
+    Exercise Assessment Video using STGCN (For see the reults, please click in the image)
   </figcaption>
 </figure>
 
