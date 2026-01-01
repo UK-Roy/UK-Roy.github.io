@@ -10,11 +10,6 @@ math: true
 github: https://github.com/UK-Roy/medical_manipulator
 ---
 
-## Overview
-
-This project investigates **classical control and task-space manipulation** of a medical robotic arm using **NVIDIA Isaac Gym**, with the goal of understanding the strengths and limitations of analytical controllers before transitioning to learning-based frameworks such as **Isaac Lab**.
-
-The focus is on **simulation-first experimentation**, not sim-to-real transfer, emphasizing control stability, task-space behavior, and GPU-accelerated physics.
 
 ---
 
